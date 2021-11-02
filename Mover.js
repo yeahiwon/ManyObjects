@@ -25,12 +25,13 @@ class Mover {
   }
 
   show() {
-    fill(0);
+    stroke(0,0,200);
+    noFill();
     circle(this.pos.x, this.pos.y, this.m);
   }
 
   drawOn(c) {
-    c.fill(250, 250, 0, 20);
+    c.fill(0, 0, 200, 20);
     c.noStroke();
     c.circle(this.pos.x, this.pos.y, this.m);
   }
